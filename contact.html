@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="page-contact">
 
 <header>
   <div class="logo-wrap">
@@ -14,10 +14,13 @@
     <strong>AnyDrinks</strong>
   </div>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="producten.html">Producten</a>
-    <a href="merken.html">Merken</a>
-    <a href="contact.html" class="active">Contact</a>
+    <a href="index.html" class="nav-home">Home</a>
+    <a href="producten.html" class="nav-products">Producten</a>
+    <a href="merken.html" class="nav-brands">Merken</a>
+    <a href="contact.html" class="nav-contact active">Contact</a>
+    <a href="cart.html" class="cart-link">
+      🛒 Mandje (<span id="cart-count">0</span>)
+    </a>
   </nav>
 </header>
 
@@ -25,17 +28,20 @@
   <section>
     <h2>Contact & B2B</h2>
     <p class="section-subtitle">
-      Voor grote bestellingen, samenwerking of vragen.
+      Wil je grote bestellingen plaatsen, sponsoringsmogelijkheden bespreken of heb je vragen?
     </p>
 
     <div class="contact-box">
       <div>
-        <h3>Zakelijk contact</h3>
-        <p>Stuur ons een mail of gebruik het formulier:</p>
+        <h3>Zakelijke info</h3>
+        <p>Je kunt ons bereiken via e-mail of via het formulier.</p>
         <ul>
           <li>📧 info@anydrinks.com</li>
           <li>📍 België</li>
         </ul>
+        <p style="margin-top:10px; font-size:0.9rem;">
+          We antwoorden normaal binnen 1–2 werkdagen.
+        </p>
       </div>
 
       <form>
@@ -58,8 +64,11 @@
 </main>
 
 <footer>
-  © 2025 AnyDrinks – Online Energy Drink Shop.
+  <div class="footer-bottom">
+    © 2025 AnyDrinks – Online Energy Drink Shop.
+  </div>
 </footer>
 
+<script src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Winkelmandje – AnyDrinks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-cart">
+
+<header>
+  <div class="logo-wrap">
+    <img src="anydrinks-logo.png" class="logo" alt="AnyDrinks logo">
+    <strong>AnyDrinks</strong>
+  </div>
+  <nav>
+    <a href="index.html" class="nav-home">Home</a>
+    <a href="producten.html" class="nav-products">Producten</a>
+    <a href="merken.html" class="nav-brands">Merken</a>
+    <a href="contact.html" class="nav-contact">Contact</a>
+    <a href="cart.html" class="cart-link active">
+      🛒 Mandje (<span id="cart-count">0</span>)
+    </a>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h2>Winkelmandje</h2>
+    <p class="section-subtitle">
+      Dit is een demo-winkelmandje (front-end). Later kun je dit koppelen aan Shopify.
+    </p>
+
+    <div id="cart-empty" class="cart-empty">
+      Je mandje is nog leeg. <a href="producten.html">Bekijk producten →</a>
+    </div>
+
+    <div id="cart-content" class="cart-content" style="display:none;">
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Merk</th>
+            <th>Prijs</th>
+            <th>Aantal</th>
+            <th>Subtotaal</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="cart-items">
+          <!-- JS vult dit -->
+        </tbody>
+      </table>
+
+      <div class="cart-summary">
+        <p>Totaal: <strong id="cart-total">€0,00</strong></p>
+        <p class="cart-note">
+          Dit is enkel een demo. In Shopify zou de "Afrekenen"-knop naar de echte checkout gaan.
+        </p>
+        <button class="btn" type="button">Afrekenen (demo)</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-bottom">
+    © 2025 AnyDrinks – Online Energy Drink Shop.
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

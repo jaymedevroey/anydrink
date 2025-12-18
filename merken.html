@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="page-brands">
 
 <header>
   <div class="logo-wrap">
@@ -14,10 +14,13 @@
     <strong>AnyDrinks</strong>
   </div>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="producten.html">Producten</a>
-    <a href="merken.html" class="active">Merken</a>
-    <a href="contact.html">Contact</a>
+    <a href="index.html" class="nav-home">Home</a>
+    <a href="producten.html" class="nav-products">Producten</a>
+    <a href="merken.html" class="nav-brands active">Merken</a>
+    <a href="contact.html" class="nav-contact">Contact</a>
+    <a href="cart.html" class="cart-link">
+      🛒 Mandje (<span id="cart-count">0</span>)
+    </a>
   </nav>
 </header>
 
@@ -25,25 +28,55 @@
   <section>
     <h2>Merken die wij verkopen</h2>
     <p class="section-subtitle">
-      Dit kun je later linken naar merk-pagina’s of filters.
+      Hier zie je een overzicht van de energydrink-merken in onze shop.
     </p>
 
     <div class="brands-grid">
-      <div class="brand-card">Monster Energy</div>
-      <div class="brand-card">Red Bull</div>
-      <div class="brand-card">Rockstar Energy</div>
-      <div class="brand-card">Prime Energy</div>
-      <div class="brand-card">Nocco</div>
-      <div class="brand-card">Reign</div>
-      <div class="brand-card">Effect</div>
-      <div class="brand-card">Burn</div>
+      <article class="brand-card">
+        <h3>Monster Energy</h3>
+        <p>Bekend om smaken zoals Mango Loco, Ultra White, Pipeline Punch en meer.</p>
+        <a href="producten.html" class="link-small">Bekijk Monster producten →</a>
+      </article>
+
+      <article class="brand-card">
+        <h3>Red Bull</h3>
+        <p>De meest iconische energydrink ter wereld, in klassieke en sugarfree versies.</p>
+        <a href="producten.html" class="link-small">Bekijk Red Bull producten →</a>
+      </article>
+
+      <article class="brand-card">
+        <h3>Rockstar Energy</h3>
+        <p>Energydrinks met sterke smaak, ideaal voor lange dagen en nachten.</p>
+        <a href="producten.html" class="link-small">Bekijk Rockstar producten →</a>
+      </article>
+
+      <article class="brand-card">
+        <h3>Prime Energy</h3>
+        <p>Hype merk mede van Logan Paul & KSI, enorm populair bij jongeren.</p>
+        <a href="producten.html" class="link-small">Bekijk Prime producten →</a>
+      </article>
+
+      <article class="brand-card">
+        <h3>Nocco</h3>
+        <p>Suikervrije drinks met BCAA, geliefd in de fitnesswereld.</p>
+        <a href="producten.html" class="link-small">Bekijk Nocco producten →</a>
+      </article>
+
+      <article class="brand-card">
+        <h3>Reign</h3>
+        <p>Hoog cafeïnegehalte, ontworpen voor mensen die zwaar sporten.</p>
+        <a href="producten.html" class="link-small">Bekijk Reign producten →</a>
+      </article>
     </div>
   </section>
 </main>
 
 <footer>
-  © 2025 AnyDrinks – Online Energy Drink Shop.
+  <div class="footer-bottom">
+    © 2025 AnyDrinks – Online Energy Drink Shop.
+  </div>
 </footer>
 
+<script src="app.js"></script>
 </body>
 </html>

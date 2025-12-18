@@ -52,7 +52,7 @@ nav a:hover {
   color: var(--yellow);
 }
 
-/* GENERIC */
+/* GENERIC LAYOUT */
 main section {
   max-width: 1150px;
   margin: 40px auto;
@@ -123,25 +123,57 @@ h1, h2 {
   color: var(--light);
 }
 
-/* SEARCHBAR */
-.search-bar {
-  margin-bottom: 20px;
+/* USP BAR */
+.usp-bar {
+  max-width: 1150px;
+  margin: 0 auto 20px;
+  padding: 10px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
 }
 
-.search-bar input {
-  width: 100%;
-  max-width: 420px;
-  padding: 10px 12px;
+.usp-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.usp-icon {
+  font-size: 1.2rem;
+}
+
+/* STRIP / BRANDS ROW */
+.strip {
+  text-align: left;
+}
+
+.brands-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.brands-row span {
+  background: #fff;
   border-radius: 999px;
-  border: 1px solid #ccc;
-  outline: none;
+  padding: 6px 14px;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-.search-bar input:focus {
-  border-color: var(--yellow);
+/* LINKS */
+.link-small {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: #0072ff;
 }
 
-/* PRODUCT GRID */
+/* PRODUCTS GRID */
 .products-grid {
   display: grid;
   gap: 20px;
@@ -170,20 +202,127 @@ h1, h2 {
   font-weight: bold;
 }
 
-/* MERKEN */
+/* STEPS */
+.steps-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.step-card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.step-number {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  opacity: 0.12;
+}
+
+/* REVIEWS */
+.reviews-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.review-card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.review-text {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.review-name {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* NEWSLETTER */
+.newsletter {
+  max-width: 1150px;
+  margin: 40px auto 60px;
+  padding: 0 20px;
+}
+
+.newsletter-inner {
+  background: #111;
+  color: #fff;
+  border-radius: 18px;
+  padding: 20px 20px;
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.2fr);
+  gap: 20px;
+  align-items: center;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input {
+  flex: 1;
+  min-width: 160px;
+  padding: 10px;
+  border-radius: 999px;
+  border: none;
+  outline: none;
+}
+
+/* BRANDS PAGE */
 .brands-grid {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 .brand-card {
   background: #fff;
-  padding: 16px;
-  border-radius: 14px;
-  text-align: center;
-  font-weight: bold;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  padding: 18px;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* FILTERS ROW (PRODUCTEN) */
+.filters-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.search-bar input {
+  width: 100%;
+  max-width: 420px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.search-bar input:focus {
+  border-color: var(--yellow);
+}
+
+.filter-select select {
+  padding: 9px 12px;
+  border-radius: 999px;
+  border: 1px solid #ccc;
 }
 
 /* CONTACT */
@@ -216,12 +355,51 @@ textarea {
 
 /* FOOTER */
 footer {
+  background: #111;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.footer-inner {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 20px 20px 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  font-size: 0.9rem;
+}
+
+.footer-inner h4 {
+  margin-bottom: 8px;
+}
+
+.footer-inner ul {
+  list-style: none;
+}
+
+.footer-inner li {
+  margin-bottom: 4px;
+}
+
+.footer-inner a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-inner a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
   text-align: center;
-  padding: 30px 10px;
+  font-size: 0.8rem;
+  padding: 8px 10px 14px;
   opacity: 0.7;
 }
 
-/* Responsive */
+/* RESPONSIVE */
 @media (max-width: 900px) {
   header {
     flex-direction: column;
@@ -233,7 +411,47 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  .newsletter-inner {
+    grid-template-columns: 1fr;
+  }
+
   .contact-box {
     grid-template-columns: 1fr;
   }
 }
+
+/* Zorg dat alleen productkaarten flexbox gebruiken */
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Stukje tekst wat compacter */
+.product-card p {
+  margin-bottom: 6px;
+}
+
+/* Duw prijs + knop naar beneden zodat alle kaarten gelijk uitlijnen */
+.product-card .price {
+  margin-top: auto;       /* duwt alles erboven omhoog */
+}
+
+/* Kleine knop + netjes onder de prijs */
+.product-card .btn-small {
+  margin-top: 8px;
+  align-self: flex-start; /* knop blijft links */
+}
+.add-to-cart {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.add-to-cart.added {
+  transform: scale(1.14);
+  box-shadow: 0 0 12px rgba(255, 212, 49, 0.9);
+}
+
+.add-to-cart.added-end {
+  transform: scale(1);
+  box-shadow: none;
+}
+
