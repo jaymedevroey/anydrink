@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Producten – AnyDrinks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo-wrap">
+    <img src="anydrinks-logo.png" class="logo" alt="AnyDrinks logo">
+    <strong>AnyDrinks</strong>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="producten.html" class="active">Producten</a>
+    <a href="merken.html">Merken</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h2>Alle producten</h2>
+    <p class="section-subtitle">
+      Zoek op merk, smaak of type: bijvoorbeeld “monster”, “mango”, “zero”, “red bull”…
+    </p>
+
+    <!-- 🔍 Zoekbalk -->
+    <div class="search-bar">
+      <input id="product-search" type="text" placeholder="Zoek energy drinks...">
+    </div>
+
+    <!-- Producten grid -->
+    <div class="products-grid" id="products-list">
+
+      <!-- Elk product krijgt data-attributen voor zoeken -->
+      <article class="card product-card"
+               data-merk="monster"
+               data-naam="monster mango loco"
+               data-tags="fruit mango loco 500ml">
+        <span class="badge">Monster</span>
+        <h3>Monster Mango Loco (500ml)</h3>
+        <p>Fruitige smaak, zeer populair.</p>
+        <p class="price">€2,29</p>
+      </article>
+
+      <article class="card product-card"
+               data-merk="red bull"
+               data-naam="red bull energy"
+               data-tags="classic original 250ml">
+        <span class="badge">Red Bull</span>
+        <h3>Red Bull Energy (250ml)</h3>
+        <p>De klassieke Red Bull.</p>
+        <p class="price">€1,69</p>
+      </article>
+
+      <article class="card product-card"
+               data-merk="rockstar"
+               data-naam="rockstar original"
+               data-tags="classic 500ml">
+        <span class="badge">Rockstar</span>
+        <h3>Rockstar Original (500ml)</h3>
+        <p>Sterke klassieke energy flavour.</p>
+        <p class="price">€1,99</p>
+      </article>
+
+      <article class="card product-card"
+               data-merk="prime"
+               data-naam="prime energy blue raspberry"
+               data-tags="blue raspberry 330ml">
+        <span class="badge">Prime</span>
+        <h3>Prime Energy – Blue Raspberry</h3>
+        <p>Hype-drank, vooral bij jongeren.</p>
+        <p class="price">€2,79</p>
+      </article>
+
+      <article class="card product-card"
+               data-merk="nocco"
+               data-naam="nocco blood orange del sol"
+               data-tags="bcaa sugarfree zero">
+        <span class="badge">Nocco</span>
+        <h3>Nocco Blood Orange Del Sol</h3>
+        <p>Suikervrij, met BCAA.</p>
+        <p class="price">€2,49</p>
+      </article>
+
+      <article class="card product-card"
+               data-merk="reign"
+               data-naam="reign razzle berry"
+               data-tags="fitness high caffeine">
+        <span class="badge">Reign</span>
+        <h3>Reign Razzle Berry</h3>
+        <p>Populair bij fitnessliefhebbers.</p>
+        <p class="price">€2,59</p>
+      </article>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2025 AnyDrinks – Online Energy Drink Shop.
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
