@@ -1,201 +1,243 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
   <meta charset="UTF-8">
   <title>Producten – AnyDrinks</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="page-products">
 
-<header>
-  <div class="logo-wrap">
-    <img src="anydrinks-logo.png" class="logo" alt="AnyDrinks logo">
-    <strong>AnyDrinks</strong>
-  </div>
-  <nav>
-    <a href="index.html" class="nav-home">Home</a>
-    <a href="producten.html" class="nav-products active">Producten</a>
-    <a href="merken.html" class="nav-brands">Merken</a>
-    <a href="contact.html" class="nav-contact">Contact</a>
-    <a href="cart.html" class="cart-link">
-      🛒 Mandje (<span id="cart-count">0</span>)
-    </a>
-  </nav>
-</header>
-
-<main>
-  <section>
-    <h2>Alle producten</h2>
-    <p class="section-subtitle">
-      Gebruik de zoekbalk of filter op merk om snel te vinden wat je zoekt.
-    </p>
-
-    <div class="filters-row">
-      <div class="search-bar">
-        <input id="product-search" type="text" placeholder="Zoek op smaak, merk, type...">
-      </div>
-      <div class="filter-select">
-        <select id="brand-filter">
-          <option value="alle">Alle merken</option>
-          <option value="monster">Monster</option>
-          <option value="red bull">Red Bull</option>
-          <option value="rockstar">Rockstar</option>
-          <option value="prime">Prime</option>
-          <option value="nocco">Nocco</option>
-          <option value="reign">Reign</option>
-        </select>
-      </div>
+  <header>
+    <div class="logo-wrap">
+      <img src="Images/Drinks_6.png" class="logo" alt="AnyDrinks logo">
+      <strong>AnyDrinks</strong>
     </div>
+    <nav>
+      <a href="index.html" class="nav-home">Home</a>
+      <a href="producten.html" class="nav-products active">Producten</a>
+      <a href="merken.html" class="nav-brands">Merken</a>
+      <a href="contact.html" class="nav-contact">Contact</a>
+      <a href="cart.html" class="cart-link">
+        🛒 Mandje (<span id="cart-count">0</span>)
+      </a>
+    </nav>
+  </header>
 
-    <div class="products-grid" id="products-list">
+  <main>
+    <section>
+      <h2>Alle producten</h2>
+      <p class="section-subtitle">
+        Gebruik de zoekbalk of filter op merk om snel te vinden wat je zoekt.
+      </p>
 
-      <article class="card product-card"
-               data-merk="monster"
-               data-naam="monster mango loco"
-               data-tags="fruit mango loco 500ml zoet">
-        <span class="badge">Monster</span>
-        <h3>Monster Mango Loco (500ml)</h3>
-        <p>Fruitige, zoete energy met tropische smaak.</p>
-        <p class="price">€2,29</p>
-        <button class="btn btn-small add-to-cart"
-                data-id="monster-mango-loco-500"
-                data-name="Monster Mango Loco (500ml)"
-                data-brand="Monster"
-                data-price="2.29">
-          + Mandje
-        </button>
-      </article>
+      <div class="filters-row">
+        <div class="search-bar">
+          <input id="product-search" type="text" placeholder="Zoek op smaak, merk, type...">
+        </div>
+        <div class="filter-select">
+          <select id="brand-filter">
+            <option value="alle">Alle merken</option>
+            <option value="monster">Monster</option>
+            <option value="red bull">Red Bull</option>
+            <option value="rockstar">Rockstar</option>
+            <option value="prime">Prime</option>
+            <option value="nocco">Nocco</option>
+            <option value="reign">Reign</option>
+          </select>
+        </div>
+      </div>
 
-      <article class="card product-card"
-               data-merk="monster"
-               data-naam="monster ultra white"
-               data-tags="zero sugarfree 500ml">
-        <span class="badge">Monster</span>
-        <h3>Monster Ultra White (500ml)</h3>
-        <p>Suikervrije Monster met frisse smaak.</p>
-        <p class="price">€2,29</p>
-        <button class="btn btn-small add-to-cart"
-                data-id="monster-ultra-white-500"
-                data-name="Monster Ultra White (500ml)"
-                data-brand="Monster"
-                data-price="2.29">
-          + Mandje
-        </button>
-      </article>
+      <div class="products-grid" id="products-list">
 
-      <article class="card product-card"
-               data-merk="red bull"
-               data-naam="red bull energy"
-               data-tags="classic original 250ml">
-        <span class="badge">Red Bull</span>
-        <h3>Red Bull Energy (250ml)</h3>
-        <p>De bekende klassieke Red Bull.</p>
-        <p class="price">€1,69</p>
-        <button class="btn btn-small add-to-cart"
-                data-id="redbull-energy-250"
-                data-name="Red Bull Energy (250ml)"
-                data-brand="Red Bull"
-                data-price="1.69">
-          + Mandje
-        </button>
-      </article>
+        <!-- MONSTER MANGO LOCO -->
+        <article class="card product-card" data-merk="monster" data-naam="monster mango loco"
+          data-tags="fruit mango loco 500ml zoet">
+          <div class="product-image">
+            <img src="Images/MANGO LOCO.png" alt="Monster Mango Loco (500ml)">
+          </div>
+          <span class="badge">Monster</span>
+          <h3>Monster Mango Loco (500ml)</h3>
+          <p>Fruitige, zoete energy met tropische smaak.</p>
+          <p class="price">€2,29</p>
+          <button class="btn btn-small add-to-cart" data-id="monster-mango-loco-500"
+            data-name="Monster Mango Loco (500ml)" data-brand="Monster" data-price="2.29">
+            + Mandje
+          </button>
+        </article>
 
-      <article class="card product-card"
-               data-merk="red bull"
-               data-naam="red bull sugarfree"
-               data-tags="zero sugarfree 250ml">
-        <span class="badge">Red Bull</span>
-        <h3>Red Bull Sugarfree (250ml)</h3>
-        <p>Zelfde kick, minder calorieën.</p>
-        <p class="price">€1,79</p>
-        <button class="btn btn-small add-to-cart"
-                data-id="redbull-sugarfree-250"
-                data-name="Red Bull Sugarfree (250ml)"
-                data-brand="Red Bull"
-                data-price="1.79">
-          + Mandje
-        </button>
-      </article>
+        <!-- MONSTER JUICED -->
+        <article class="card product-card" data-merk="monster" data-naam="monster juiced"
+          data-tags="juice monster fruitig 500ml">
+          <div class="product-image">
+            <img src="Images/JUICE MONSTER.png" alt="Monster Juiced (500ml)">
+          </div>
+          <span class="badge">Monster</span>
+          <h3>Monster Juiced (500ml)</h3>
+          <p>Fruitige Monster met sap, zachte smaak.</p>
+          <p class="price">€2,29</p>
+          <button class="btn btn-small add-to-cart" data-id="monster-juiced-500" data-name="Monster Juiced (500ml)"
+            data-brand="Monster" data-price="2.29">
+            + Mandje
+          </button>
+        </article>
 
-      <article class="card product-card"
-               data-merk="rockstar"
-               data-naam="rockstar original"
-               data-tags="classic 500ml">
-        <span class="badge">Rockstar</span>
-        <h3>Rockstar Original (500ml)</h3>
-        <p>Krachtige klassieke energy smaak.</p>
-        <p class="price">€1,99</p>
-        <button class="btn btn-small add-to-cart"
-                data-id="rockstar-original-500"
-                data-name="Rockstar Original (500ml)"
-                data-brand="Rockstar"
-                data-price="1.99">
-          + Mandje
-        </button>
-      </article>
+        <!-- MONSTER COFFEE -->
+        <article class="card product-card" data-merk="monster" data-naam="monster coffee" data-tags="koffie java 500ml">
+          <div class="product-image">
+            <img src="Images/MONSTER COFFEE.png" alt="Monster Coffee (500ml)">
+          </div>
+          <span class="badge">Monster</span>
+          <h3>Monster Coffee (500ml)</h3>
+          <p>Energy + koffie, perfect voor lange dagen.</p>
+          <p class="price">€2,49</p>
+          <button class="btn btn-small add-to-cart" data-id="monster-coffee-500" data-name="Monster Coffee (500ml)"
+            data-brand="Monster" data-price="2.49">
+            + Mandje
+          </button>
+        </article>
 
-      <article class="card product-card"
-               data-merk="prime"
-               data-naam="prime energy blue raspberry"
-               data-tags="blue raspberry 330ml">
-        <span class="badge">Prime</span>
-        <h3>Prime Energy – Blue Raspberry</h3>
-        <p>Hype energy drank, blauwe framboos.</p>
-        <p class="price">€2,79</p>
-        <button class="btn btn-small add-to-cart"
-                data-id="prime-blue-raspberry-330"
-                data-name="Prime Energy – Blue Raspberry"
-                data-brand="Prime"
-                data-price="2.79">
-          + Mandje
-        </button>
-      </article>
+        <!-- MONSTER ENERGY ORIGINAL -->
+        <article class="card product-card" data-merk="monster" data-naam="monster energy"
+          data-tags="classic original 500ml">
+          <div class="product-image">
+            <img src="Images/MONSTER ENERGY.png" alt="Monster Energy (500ml)">
+          </div>
+          <span class="badge">Monster</span>
+          <h3>Monster Energy (500ml)</h3>
+          <p>De klassieke groene Monster energy.</p>
+          <p class="price">€2,19</p>
+          <button class="btn btn-small add-to-cart" data-id="monster-energy-500" data-name="Monster Energy (500ml)"
+            data-brand="Monster" data-price="2.19">
+            + Mandje
+          </button>
+        </article>
 
-      <article class="card product-card"
-               data-merk="nocco"
-               data-naam="nocco blood orange del sol"
-               data-tags="bcaa sugarfree zero">
-        <span class="badge">Nocco</span>
-        <h3>Nocco Blood Orange Del Sol</h3>
-        <p>Suikervrije energy met BCAA, sinaasappel.</p>
-        <p class="price">€2,49</p>
-        <button class="btn btn-small add-to-cart"
-                data-id="nocco-blood-orange"
-                data-name="Nocco Blood Orange Del Sol"
-                data-brand="Nocco"
-                data-price="2.49">
-          + Mandje
-        </button>
-      </article>
+        <!-- MONSTER ULTRA -->
+        <article class="card product-card" data-merk="monster" data-naam="monster ultra"
+          data-tags="ultra zero sugarfree 500ml">
+          <div class="product-image">
+            <img src="Images/MONSTER ULTRA.png" alt="Monster Ultra (500ml)">
+          </div>
+          <span class="badge">Monster</span>
+          <h3>Monster Ultra (500ml)</h3>
+          <p>Lichte, frisse Monster zonder suiker.</p>
+          <p class="price">€2,29</p>
+          <button class="btn btn-small add-to-cart" data-id="monster-ultra-500" data-name="Monster Ultra (500ml)"
+            data-brand="Monster" data-price="2.29">
+            + Mandje
+          </button>
+        </article>
 
-      <article class="card product-card"
-               data-merk="reign"
-               data-naam="reign razzle berry"
-               data-tags="fitness high caffeine 500ml">
-        <span class="badge">Reign</span>
-        <h3>Reign Razzle Berry</h3>
-        <p>Hoog cafeïnegehalte, populair bij fitness.</p>
-        <p class="price">€2,59</p>
-        <button class="btn btn-small add-to-cart"
-                data-id="reign-razzle-berry-500"
-                data-name="Reign Razzle Berry"
-                data-brand="Reign"
-                data-price="2.59">
-          + Mandje
-        </button>
-      </article>
+        <!-- MONSTER REHAB -->
+        <article class="card product-card" data-merk="monster" data-naam="monster rehab"
+          data-tags="rehab tea lemonade 500ml">
+          <div class="product-image">
+            <img src="Images/REHAB MONSTER.png" alt="Monster Rehab (500ml)">
+          </div>
+          <span class="badge">Monster</span>
+          <h3>Monster Rehab (500ml)</h3>
+          <p>Thee + lemonade + energy, zonder koolzuur.</p>
+          <p class="price">€2,39</p>
+          <button class="btn btn-small add-to-cart" data-id="monster-rehab-500" data-name="Monster Rehab (500ml)"
+            data-brand="Monster" data-price="2.39">
+            + Mandje
+          </button>
+        </article>
 
+        <!-- MONSTER ZERO SUGAR -->
+        <article class="card product-card" data-merk="monster" data-naam="monster zero sugar"
+          data-tags="zero sugar 500ml">
+          <div class="product-image">
+            <img src="Images/ZERO SUGAR.png" alt="Monster Zero Sugar (500ml)">
+          </div>
+          <span class="badge">Monster</span>
+          <h3>Monster Zero Sugar (500ml)</h3>
+          <p>Volle smaak, nul suiker.</p>
+          <p class="price">€2,29</p>
+          <button class="btn btn-small add-to-cart" data-id="monster-zero-sugar-500"
+            data-name="Monster Zero Sugar (500ml)" data-brand="Monster" data-price="2.29">
+            + Mandje
+          </button>
+        </article>
+
+        <!-- RED BULL ORIGINAL -->
+        <article class="card product-card" data-merk="red bull" data-naam="red bull energy"
+          data-tags="classic original 250ml">
+          <div class="product-image">
+            <img src="Images/RED BULL.png" alt="Red Bull Energy (250ml)">
+          </div>
+          <span class="badge">Red Bull</span>
+          <h3>Red Bull Energy (250ml)</h3>
+          <p>De bekende klassieke Red Bull.</p>
+          <p class="price">€1,69</p>
+          <button class="btn btn-small add-to-cart" data-id="redbull-energy-250" data-name="Red Bull Energy (250ml)"
+            data-brand="Red Bull" data-price="1.69">
+            + Mandje
+          </button>
+        </article>
+
+        <!-- RED BULL ZERO -->
+        <article class="card product-card" data-merk="red bull" data-naam="red bull zero"
+          data-tags="zero sugarfree 250ml">
+          <div class="product-image">
+            <img src="Images/RED BULL ZERO.png" alt="Red Bull Zero (250ml)">
+          </div>
+          <span class="badge">Red Bull</span>
+          <h3>Red Bull Zero (250ml)</h3>
+          <p>Zelfde smaak, helemaal suikervrij.</p>
+          <p class="price">€1,79</p>
+          <button class="btn btn-small add-to-cart" data-id="redbull-zero-250" data-name="Red Bull Zero (250ml)"
+            data-brand="Red Bull" data-price="1.79">
+            + Mandje
+          </button>
+        </article>
+
+        <!-- RED BULL SUGARFREE -->
+        <article class="card product-card" data-merk="red bull" data-naam="red bull sugarfree"
+          data-tags="zero sugarfree 250ml">
+          <div class="product-image">
+            <img src="Images/RED BULL SUGARFREE.png" alt="Red Bull Sugarfree (250ml)">
+          </div>
+          <span class="badge">Red Bull</span>
+          <h3>Red Bull Sugarfree (250ml)</h3>
+          <p>Zelfde kick, minder calorieën.</p>
+          <p class="price">€1,79</p>
+          <button class="btn btn-small add-to-cart" data-id="redbull-sugarfree-250"
+            data-name="Red Bull Sugarfree (250ml)" data-brand="Red Bull" data-price="1.79">
+            + Mandje
+          </button>
+        </article>
+
+        <!-- RED BULL WHITE EDITION -->
+        <article class="card product-card" data-merk="red bull" data-naam="red bull white edition"
+          data-tags="white edition coconut berry 250ml">
+          <div class="product-image">
+            <img src="Images/RED BULL WHITE.png" alt="Red Bull White Edition (250ml)">
+          </div>
+          <span class="badge">Red Bull</span>
+          <h3>Red Bull White Edition (250ml)</h3>
+          <p>Kokos-bessen smaak, limited feel.</p>
+          <p class="price">€1,89</p>
+          <button class="btn btn-small add-to-cart" data-id="redbull-white-250"
+            data-name="Red Bull White Edition (250ml)" data-brand="Red Bull" data-price="1.89">
+            + Mandje
+          </button>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-bottom">
+      © 2025 AnyDrinks – Online Energy Drink Shop.
     </div>
-  </section>
-</main>
+  </footer>
 
-<footer>
-  <div class="footer-bottom">
-    © 2025 AnyDrinks – Online Energy Drink Shop.
-  </div>
-</footer>
-
-<script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
+
 </html>

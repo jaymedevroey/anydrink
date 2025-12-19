@@ -454,4 +454,21 @@ footer {
   transform: scale(1);
   box-shadow: none;
 }
+.product-card .product-image {
+  width: 100%;
+  height: 220px;                 /* overal zelfde hoogte */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  overflow: hidden;              /* stuk van te grote foto gewoon afknippen */
+}
 
+/* De blikjes zelf */
+.product-card .product-image img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;                   /* NIET automatisch 100% breed */
+  display: block;
+  object-fit: contain;           /* blikje blijft volledig zichtbaar */
+}
